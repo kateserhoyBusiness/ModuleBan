@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ModuleBan - Kanban Pop-up Plugin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="badge badge-soft px-3 py-2 rounded-pill">MB</span>
+          <div>
+            <div class="fw-bold">ModuleBan</div>
+            <small class="text-muted">Kanban pop-up plugin</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-center gap-3">
+            <li class="nav-item"><a class="nav-link text-dark" href="#features">Recursos</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#how">Como funciona</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#demo">Demo</a></li>
+            <li class="nav-item"><a class="btn btn-primary px-4" href="#download">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span class="badge badge-soft mb-3 px-3 py-2">Plugin / Kanban / Pop-up</span>
+            <h1 class="display-5 fw-bold">ModuleBan transforma seu fluxo em um Kanban leve, sem ocupar guia.</h1>
+            <p class="lead text-secondary">Abra o painel de tarefas em um pop-up elegante e organize cards em colunas. Ideal para produtividade rápida e visual, direto no navegador.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+              <a class="btn btn-primary btn-lg" href="#download">Baixar</a>
+              <a class="btn btn-outline-secondary btn-lg" href="#how">Ver como funciona</a>
+            </div>
+            <div class="mt-5 p-4 rounded-4" style="background: rgba(59,130,246,.08);">
+              <div class="d-flex align-items-center gap-3">
+                <span class="badge bg-primary rounded-circle p-3"><i class="bi bi-lightning-charge-fill"></i></span>
+                <div>
+                  <h6 class="mb-1 fw-semibold">Acesso instantâneo</h6>
+                  <p class="mb-0 text-muted">Clique no plugin e abra o Kanban em um modal leve, sem ocupar uma nova guia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="screenshot">
+              <div class="popup-mock p-4">
+                <div class="popup-header d-flex align-items-center justify-content-between mb-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="text-muted fw-semibold">ModuleBan</span>
+                  </div>
+                  <div class="text-muted small">Pop-up ativo</div>
+                </div>
+                <div class="popup-status rounded-4 p-3 mb-4 bg-white border">
+                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <span class="badge badge-soft px-3 py-2">Kanban Modal</span>
+                    <span class="text-muted small">Arraste cards entre colunas</span>
+                  </div>
+                </div>
+                <div class="row gx-3">
+                  <div class="col-4">
+                    <div class="board-column rounded-4 p-3 bg-white shadow-sm">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h6 class="mb-0">To do</h6>
+                        <span class="badge bg-primary-soft text-primary">2</span>
+                      </div>
+                      <div class="task-card mb-3 p-3 rounded-4 bg-primary-soft text-primary">
+                        <strong>Pesquisar API</strong>
+                        <p class="mb-0 small text-muted">Definir endpoints</p>
+                      </div>
+                      <div class="task-card p-3 rounded-4 bg-primary-soft text-primary">
+                        <strong>Planejar cards</strong>
+                        <p class="mb-0 small text-muted">Organizar colunas</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="board-column rounded-4 p-3 bg-white shadow-sm">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h6 class="mb-0">Doing</h6>
+                        <span class="badge bg-warning-soft text-warning">1</span>
+                      </div>
+                      <div class="task-card p-3 rounded-4 bg-warning-soft text-warning">
+                        <strong>Desenvolver UI</strong>
+                        <p class="mb-0 small text-muted">Criar a simulação</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="board-column rounded-4 p-3 bg-white shadow-sm">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h6 class="mb-0">Done</h6>
+                        <span class="badge bg-success-soft text-success">1</span>
+                      </div>
+                      <div class="task-card p-3 rounded-4 bg-success-soft text-success">
+                        <strong>Visual pronto</strong>
+                        <p class="mb-0 small text-muted">Layout clean</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-sidebar mt-4 p-4 rounded-4 bg-white border shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="fw-semibold">Atalhos</span>
+                  <span class="badge bg-primary-soft text-primary">Novo</span>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <div class="p-3 rounded-4 bg-surface-soft border">Adicionar tarefa</div>
+                  <div class="p-3 rounded-4 bg-surface-soft border">Mover card</div>
+                  <div class="p-3 rounded-4 bg-surface-soft border">Fechar pop-up</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-primary fw-bold mb-2">Funcionalidades</p>
+          <h2 class="fw-bold">O que torna ModuleBan diferente</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="card feature-card p-4 h-100">
+              <div class="card-icon mb-3"><i class="bi bi-grid-1x2-fill fs-4"></i></div>
+              <h5>Quadro Kanban</h5>
+              <p class="text-muted">Organize tarefas em colunas para ver o progresso do trabalho de forma clara.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card feature-card p-4 h-100">
+              <div class="card-icon mb-3"><i class="bi bi-window-sidebar fs-4"></i></div>
+              <h5>Popup leve</h5>
+              <p class="text-muted">Abre em um modal rápido e fácil de fechar, sem ocupar uma nova guia do navegador.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card feature-card p-4 h-100">
+              <div class="card-icon mb-3"><i class="bi bi-sliders fs-4"></i></div>
+              <h5>Controle simples</h5>
+              <p class="text-muted">Arraste cards entre colunas e crie categorias de tarefas com visibilidade instantânea.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card feature-card p-4 h-100">
+              <div class="card-icon mb-3"><i class="bi bi-phone fs-4"></i></div>
+              <h5>Design responsivo</h5>
+              <p class="text-muted">Funciona bem em desktops e dispositivos móveis com interface adaptativa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <p class="text-uppercase text-primary fw-bold mb-2">Como usar</p>
+            <h2 class="fw-bold">Vá do plugin ao fluxo de trabalho em segundos</h2>
+            <p class="text-muted">Use ModuleBan para manter o foco: abra o pop-up, mova tarefas, conclua cards e feche com um clique. Nada de guias extras ou telas complexas.</p>
+            <div class="list-group list-group-flush mt-4">
+              <div class="list-group-item px-0 py-3 d-flex align-items-start gap-3">
+                <div class="badge bg-primary rounded-circle p-3">1</div>
+                <div>
+                  <h6 class="mb-1">Instale o plugin</h6>
+                  <p class="mb-0 text-muted">Adicione ModuleBan ao seu navegador e abra o botão sempre que precisar de um quadro rápido.</p>
+                </div>
+              </div>
+              <div class="list-group-item px-0 py-3 d-flex align-items-start gap-3">
+                <div class="badge bg-primary rounded-circle p-3">2</div>
+                <div>
+                  <h6 class="mb-1">Gerencie suas colunas</h6>
+                  <p class="mb-0 text-muted">Crie colunas de To Do, Doing e Done para visualizar o progresso em um só lugar.</p>
+                </div>
+              </div>
+              <div class="list-group-item px-0 py-3 d-flex align-items-start gap-3">
+                <div class="badge bg-primary rounded-circle p-3">3</div>
+                <div>
+                  <h6 class="mb-1">Feche com facilidade</h6>
+                  <p class="mb-0 text-muted">Basta clicar fora do pop-up ou no X para retornar ao seu fluxo normal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4" style="background: #eff6ff;">
+              <h5 class="mb-4">Exemplo de tela do plugin</h5>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="p-4 rounded-4 bg-white shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <span class="badge bg-primary-subtle text-primary">Kanban Pop-up</span>
+                      <span class="text-muted">×</span>
+                    </div>
+                    <div class="row gx-3">
+                      <div class="col-4">
+                        <div class="border rounded-4 p-3 bg-white">
+                          <h6 class="mb-3">To do</h6>
+                          <div class="mb-3 p-3 rounded-3 bg-primary-subtle">Criar descrição do plugin</div>
+                          <div class="p-3 rounded-3 bg-primary-subtle">Definir colunas</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="border rounded-4 p-3 bg-white">
+                          <h6 class="mb-3">Doing</h6>
+                          <div class="mb-3 p-3 rounded-3 bg-warning-subtle">Testar layout</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="border rounded-4 p-3 bg-white">
+                          <h6 class="mb-3">Done</h6>
+                          <div class="p-3 rounded-3 bg-success-subtle">Design pronto</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="py-5">
+      <div class="container">
+        <div class="p-5 rounded-4" style="background: linear-gradient(135deg, #e0f2fe 0%, #eff6ff 100%);">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-8">
+              <h2 class="fw-bold">Comece a usar ModuleBan agora</h2>
+              <p class="text-muted mb-0">Baixe o plugin e abra sua próxima tarefa no Kanban dentro de um pop-up leve. Ideal para quem quer produtividade sem sair da página.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-primary btn-lg" href="#">Instalar plugin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-transparent border-top">
+      <div class="container text-center">
+        <p class="mb-1 text-secondary">ModuleBan — Plugin Kanban em pop-up</p>
+        <small class="text-muted">Todos os direitos reservados Kaio Kleinkauf @ 2025</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
